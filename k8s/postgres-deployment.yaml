@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata: 
+metadata:
   name: postgres-deployment
 spec:
   replicas: 1
@@ -31,4 +31,3 @@ spec:
                 secretKeyRef:
                   name: pgpassword
                   key: PGPASSWORD
-      
