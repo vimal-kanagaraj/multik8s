@@ -12,7 +12,7 @@ docker push vimalkanagaraj/multi-worker:$GIT_SHA
 
 kubectl apply -f k8s
 
-kubectl set image depoyments/server-deployment server=vimalkanagaraj/multi-server:$GIT_SHA
-kubectl set image depoyments/client-deployment client=vimalkanagaraj/multi-client:$GIT_SHA
-kubectl set image depoyments/worker-deployment worker=vimalkanagaraj/multi-worker:$GIT_SHA
+kubectl set image deployments/server-deployment server=vimalkanagaraj/multi-server:$GIT_SHA
+kubectl set image deployments/client-deployment client=vimalkanagaraj/multi-client:$GIT_SHA
+kubectl set image deployments/worker-deployment worker=vimalkanagaraj/multi-worker:$GIT_SHA
 
